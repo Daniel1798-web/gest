@@ -9,7 +9,7 @@ export default createRouter({
     history,
     routes: [
         {
-            path:"/home",
+            path:"/",
             name:"home",
             component:home
         },
