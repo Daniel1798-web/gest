@@ -1,8 +1,8 @@
 <template>
  <header class="bg-blue-400"  >
     <button>Back</button>
-    <input type="text"  class="texto" placeholder="Añadir Producto" v-model="value"/>
-    <input type="text"  class="texto" placeholder="Añadir fecha" v-model="value2"/>
+    <input type="text"  placeholder="Añadir Producto" v-model="value"/>
+    <input type="text"  placeholder="Añadir fecha" v-model="value2"/>
     <button  class="añadirL" v-on:click="añadir()">Añadir a Lacteos</button>
     <button  class="añadirC" v-on:click="añadir2()">Añadir a Critico</button>
     <button  class="borrar" v-on:click="eliminar()" >Borrar</button>
@@ -10,15 +10,15 @@
 
 
 
-    <div class="huno">
+    <div >
     <h1 class="lactis1">Fiambre</h1>
     <h1 class="lactis">Lacteos</h1>
     </div>
   
 
-<div class="dad" > 
+ 
     
-<div class="tableroListaUno" >
+<div>
     <ul v-if="mostrar">
 <li  v-for="(l, index) in lista" v-bind:key="index">
     <strong>{{l.titulo}}-{{l.fecha}}-{{index}}</strong>
@@ -29,7 +29,9 @@
 <div v-else>No hay Datos</div>
 </div>
 
-<div class="tableroListaDos" > 
+
+
+<div class="lista">
         <ul v-if="mostrar2">
 <li  v-for="(f, index) in lista2" v-bind:key="index">
     <strong>{{f.titulo}}-{{f.fecha}}-{{index}}</strong>
@@ -38,9 +40,12 @@
 
 </li>
 </ul>
-<div v-else>No hay Datos</div>
+<div v-else>
+  No hay Datos
+  </div>
 </div>
-</div>
+
+<p></p>
 
 
 </template>
@@ -107,3 +112,8 @@ export default{
      
 }
 </script>
+<style lang="scss">
+body{
+  background-color: black;
+}
+</style>
