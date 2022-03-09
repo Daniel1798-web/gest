@@ -1,5 +1,5 @@
 <template>
- <header class="bg-blue-400"  >
+ <header   >
     <button>Back</button>
     <input type="text"  placeholder="Añadir Producto" v-model="value"/>
     <input type="text"  placeholder="Añadir fecha" v-model="value2"/>
@@ -112,8 +112,11 @@ export default{
      
 }
 </script>
-<style lang="scss">
-body{
-  background-color: black;
+
+<style  scoped>
+
+.lactis1{
+  color: black;
+  font-size: 450%;
 }
 </style>
