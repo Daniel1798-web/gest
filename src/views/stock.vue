@@ -1,8 +1,9 @@
 <template>
- <header   >
+<div class="dady">
+ <header  class="cabecera" >
     <button>Back</button>
-    <input type="text"  placeholder="Añadir Producto" v-model="value"/>
-    <input type="text"  placeholder="Añadir fecha" v-model="value2"/>
+    <input type="text" class="texto"  placeholder="Añadir Producto" v-model="value"/>
+    <input type="text"  class="texto" placeholder="Añadir fecha" v-model="value2"/>
     <button  class="añadirL" v-on:click="añadir()">Añadir a Lacteos</button>
     <button  class="añadirC" v-on:click="añadir2()">Añadir a Critico</button>
     <button  class="borrar" v-on:click="eliminar()" >Borrar</button>
@@ -10,15 +11,15 @@
 
 
 
-    <div >
+    <div  class="huno">
     <h1 class="lactis1">Fiambre</h1>
-    <h1 class="lactis">Lacteos</h1>
+    <h1 class="lactis2">Lacteos</h1>
     </div>
   
 
- 
+ <div class="dad">
     
-<div>
+<div class="tableroListaUno">
     <ul v-if="mostrar">
 <li  v-for="(l, index) in lista" v-bind:key="index">
     <strong>{{l.titulo}}-{{l.fecha}}-{{index}}</strong>
@@ -31,11 +32,11 @@
 
 
 
-<div class="lista">
+<div class="tableroListaDos">
         <ul v-if="mostrar2">
 <li  v-for="(f, index) in lista2" v-bind:key="index">
     <strong>{{f.titulo}}-{{f.fecha}}-{{index}}</strong>
-          <input type="checkbox" v-model="f.eliminar">
+          <input type="checkbox"  v-model="f.eliminar">
 
 
 </li>
@@ -45,7 +46,10 @@
   </div>
 </div>
 
-<p></p>
+ </div>
+
+<p>wy</p>
+</div>
 
 
 </template>
@@ -113,10 +117,10 @@ export default{
 }
 </script>
 
-<style  scoped>
+<style  lang="scss" >
+  @import '@/assets/stilos.scss';
 
-.lactis1{
-  color: black;
-  font-size: 450%;
-}
+$title-color:red;
+
+
 </style>

@@ -1,3 +1,146 @@
-.lactis{
-    color: purple;
+body
+{
+    background-color: rgb(233, 230, 230);
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+     flex-wrap: wrap;
+   
+}
+
+.dady{
+    
+        font-family: Avenir, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+        color: #2c3e50;
+        margin-top: 60px;
+      
+}
+
+.cabecera{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(255, 247, 247);
+    margin:0%;
+    padding: 10px;
+}
+
+.añadirL, .añadirC , .borrar
+{
+
+    display: flex;
+    justify-content: center;
+    background-color: rgb(62, 64, 223);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 5px;
+    width: 10%;
+    height: 40%;
+    box-sizing: border-box;
+    word-wrap:break-word;
+ 
+    
+}
+
+
+
+.borrar:hover
+{
+    background-color: red;
+    cursor: pointer;
+}
+
+.añadirL:hover , .añadirC:hover
+{
+    background-color: green;
+    cursor: pointer;
+}
+
+
+.texto 
+{  
+    
+    background-color: rgb(255, 255, 255);
+    width: 20%;
+    height: 40%;
+    border: 2px solid rgb(194, 191, 191) ;
+    border-radius: 20px;
+    text-decoration: none;
+    outline: none;
+    font-size: 150%;
+}
+
+.huno
+{
+    background-color: rgb(236, 233, 233);
+    margin: 0%;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+
+
+
+
+.tableroListaUno
+{
+
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    margin: 1%;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(190, 186, 186);;
+    border-left: 2px solid rgb(190, 186, 186);;
+    border-right: 2px solid rgb(190, 186, 186);;
+    border-top: 2px solid rgb(190, 186, 186);
+    background-color: rgb(243, 239, 239);
+    box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    height: 50%;
+    width: 50%;
+    height: 50%
+}
+
+
+.tableroListaDos
+{
+    display:flex;
+    justify-content: right;
+    align-items: flex-start;
+    margin: 1%;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(190, 186, 186);;
+    border-left: 2px solid rgb(190, 186, 186);;
+    border-right: 2px solid rgb(190, 186, 186);;
+    border-top: 2px solid rgb(190, 186, 186);
+    background-color: rgb(243, 239, 239);
+    box-sizing: border-box;
+    width: 50%;
+    height: 50%;
+}
+
+
+
+.dad
+{
+   display: flex;
+   justify-content: space-between;
+}
+
+
+
+.check
+{
+    float: right;
 }
