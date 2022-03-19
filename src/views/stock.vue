@@ -118,7 +118,7 @@ export default{
 </script>
 
 <style  lang="scss" >
-  @import '@/assets/stilos.scss';
+  @import '@/assets/estilosStock.scss';
 
 $title-color:red;
 
