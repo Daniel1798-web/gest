@@ -10,13 +10,13 @@ export default createRouter({
     routes: [
         {
             path:"/",
-            name:"home",
-            component:home
-        },
-        {
-            path:"/stock",
             name:"stock",
             component:stock
+        },
+        {
+            path:"/home",
+            name:"home",
+            component:home
         }
     ]
 
