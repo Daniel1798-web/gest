@@ -1,43 +1,46 @@
 <template>
-hola
 
-        <div class="p">
+<headersito />
 
-            <img
-            v-for="image in images" 
-            :key="image.id"
-            :src="image.url"
-            alt="">
+<div class="padre">
 
-      
+    <div class="pi">
+
+        <div class="imagenes"  >
+                Crear Nuevo Stock
+            <a href="/stock"><img class="imagen" src="@/assets/frio.jpg"></a>
+                Revisar stocks
+             <img class="imagen2" src="@/assets/almacen.jpg">
+        </div>
     </div>
+
+        <div class="tecnicservice">
+
+            <div class="contenboton">
+                <button>AYUDA</button>
+            </div>
+
+        </div>
+
+</div>
 </template>
 
-<script>
-import {ref} from 'vue'
+<script> 
+import headersito from '@/components/header.vue'
     export default{
-        
         name:"home",
+
+     components:{
+                headersito
+            },
+           
 
         data(){
             return{               
                 
             }
         },
-        setup(){
-            const images = ref([
-                {
-                    id:1 , url:require('@/assets/caracteristicas-de-los-almacenes-logisticos.jpg')
-                },
-
-                {
-                    id:2 , url:require('@/assets/frio.jpg')
-                }
-
-
-            ])
-            return {images}
-        }
+     
     }
 
 </script>
@@ -45,15 +48,7 @@ import {ref} from 'vue'
 
 <style lang="scss">
 
-@import  '@/assets/estilosHome.scss';
-img{
-    width: 200px;
-    
-}
-
-.p{
-    background-color: beige;
-}
+@import  '@/assets/css/stylesHome.scss';
 
 
 </style>

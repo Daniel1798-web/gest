@@ -99,19 +99,14 @@ export default{
         console.log(this.contador)
       },
 
-      eliminar:function() {
+      eliminar:function() 
+      {
         this.lista = this.lista.filter((elemento) => elemento.eliminar === false)
         console.log("eliminado")
         this.lista2 = this.lista2.filter((elemento2) => elemento2.eliminar === false)
-        
-  
-  
-
-
-}
-
-   
-      },
+    
+      }
+    },
 
      
 }
