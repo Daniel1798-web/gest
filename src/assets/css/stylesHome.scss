@@ -1,34 +1,34 @@
 
     .padre{
       display: flex;
+      background-color: rgb(252, 253, 253);
     }
 
     .pi{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .imagenes{
       display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content:space-between;
-        padding: 20px;
-        border: 2px solid black;
+        margin-top: 250px;
+        margin-left:20%;
+        width: 100%;
         background-color: rgb(255, 255, 255);
 
     }
 
     .imagen{
-        width:500px;
-        margin-bottom: 20px;
-        border: 2px solid black;
+        width:200px;
+       
 
     }
 
     .imagen2{
         width: 500px;
         border: 2px solid black;
-
     }
 
     .tecnicservice{

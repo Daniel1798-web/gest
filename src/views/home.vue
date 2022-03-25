@@ -7,18 +7,18 @@
     <div class="pi">
 
         <div class="imagenes"  >
-                Crear Nuevo Stock
-            <a href="/stock"><img class="imagen" src="@/assets/frio.jpg"></a>
-                Revisar stocks
-             <img class="imagen2" src="@/assets/almacen.jpg">
+                <h2>Crear Nuevo Stock</h2>
+            <a href="/stock"><img class="imagen" src="@/assets/icons/cajitas.png"></a>
+               <h2> Revisar stocks</h2>
+             <img class="imagen"  src="@/assets/icons/papeles.png">
+               <h2>Información</h2>
+                <img class="imagen" src="@/assets/icons/ask.png" >
+
         </div>
     </div>
 
         <div class="tecnicservice">
-
-            <div class="contenboton">
-                <button>AYUDA</button>
-            </div>
+       
 
         </div>
 
