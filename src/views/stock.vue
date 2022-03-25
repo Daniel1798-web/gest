@@ -3,17 +3,25 @@
  <header  class="cabecera" >
     <button>Back</button>
     <input type="text" class="texto"  placeholder="Añadir Producto" v-model="value"/>
-    <input type="text"  class="texto" placeholder="Añadir fecha" v-model="value2"/>
-    <button  class="añadirL" v-on:click="añadir()">Añadir a Lacteos</button>
-    <button  class="añadirC" v-on:click="añadir2()">Añadir a Critico</button>
+    <input type="text"  class="texto2" placeholder="Añadir fecha" v-model="value2"/>
+      
+    <button  class="añadirL" v-on:click="añadir()">Añadir a Lista 1</button>
+    <button  class="añadirC" v-on:click="añadir2()">Añadir a Lista 2</button>
     <button  class="borrar" v-on:click="eliminar()" >Borrar</button>
+
+    <div class="botonesPhone">
+    <button  class="añadirL2" v-on:click="añadir()">Añadir a Lista 1</button>
+    <button  class="añadirC2" v-on:click="añadir2()">Añadir a Lista 2</button>
+    <button  class="borrar2" v-on:click="eliminar()" >Borrar</button>
+    </div>
+    
 </header>
 
 
 
     <div  class="huno">
-    <h1 class="lactis1">Fiambre</h1>
-    <h1 class="lactis2">Lacteos</h1>
+    <h1 class="lactis1">Lista 1</h1>
+    <h1 class="lactis2">Lista 2</h1>
     </div>
   
 
@@ -114,8 +122,9 @@ export default{
 
 <style  lang="scss" >
   @import '@/assets/estilosStock.scss';
+  @import '@/assets/phone/stockPhone.scss';
 
-$title-color:red;
+
 
 
 </style>

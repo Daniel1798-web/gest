@@ -9,6 +9,10 @@ body
    
 }
 
+.botonesPhone{
+    display: none;
+}
+
 .dady{
     
         font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -65,6 +69,20 @@ body
 
 
 .texto 
+{  
+    
+    background-color: rgb(255, 255, 255);
+    width: 20%;
+    height: 40%;
+    border: 2px solid rgb(194, 191, 191) ;
+    border-radius: 20px;
+    text-decoration: none;
+    outline: none;
+    font-size: 150%;
+}
+
+
+.texto2
 {  
     
     background-color: rgb(255, 255, 255);

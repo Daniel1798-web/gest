@@ -49,6 +49,6 @@ import headersito from '@/components/header.vue'
 <style lang="scss">
 
 @import  '@/assets/css/stylesHome.scss';
-
+@import '@/assets/phone/homePhone.scss'
 
 </style>
