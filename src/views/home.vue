@@ -8,7 +8,7 @@
 
         <div class="imagenes"  >
                 <h2>Crear Nuevo Stock</h2>
-            <a href="./stock.vue"><img class="imagen" src="@/assets/icons/cajitas.png"></a>
+            <a :href="ruta"><img class="imagen" src="@/assets/icons/cajitas.png"></a>
                <h2> Revisar stocks</h2>
              <img class="imagen"  src="@/assets/icons/papeles.png">
                <h2>Información</h2>
@@ -36,7 +36,8 @@ import headersito from '@/components/header.vue'
            
 
         data(){
-            return{               
+            return{   
+                ruta:"/stock",            
                 
             }
         },
