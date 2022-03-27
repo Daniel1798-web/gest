@@ -10,9 +10,6 @@
 .botonesPhone{
     display: flex;
     flex-direction: row;
-   
-    position: relative;
-    
     margin-top: 40px;
 
 }
@@ -39,7 +36,7 @@
 
 .cabecera{
     display: grid;
-    
+    grid-template-columns: 1fr ;
     flex-wrap: nowrap;
     justify-content: space-evenly;
     position: fixed;
@@ -61,7 +58,7 @@
     text-decoration: none;
     outline: none;
     font-size: 150%;
-    margin-top: 10px;
+ 
 }
 
 
@@ -76,7 +73,7 @@
     text-decoration: none;
     outline: none;
     font-size: 150%;
-    margin-top: 15px;
+    margin:auto;
 }
 
    
@@ -99,6 +96,8 @@
  
     
 }
+
+
 
 
 .borrar2:hover
