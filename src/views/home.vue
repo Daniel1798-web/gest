@@ -1,6 +1,7 @@
 <template>
 
-<headersito />
+
+<headersito class="heder"/>
 
 <div class="padre">
 
@@ -16,11 +17,7 @@
 
         </div>
     </div>
-
-        <div class="tecnicservice">
        
-
-        </div>
 
 </div>
 </template>
