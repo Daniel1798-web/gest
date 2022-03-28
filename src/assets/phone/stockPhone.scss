@@ -7,11 +7,71 @@
     grid-template-columns: 1fr;
 }
 
+
+.cabecera{
+    display: grid;
+    grid-template-columns: 1fr ;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(255, 247, 247);
+    margin:0px;
+    padding: 10px;
+}
+
+.linkRegreso{
+    width: 10%;
+}
+
+.regreso{
+    display: flex;
+    padding: 10px;
+    background-color: white;
+}
+
+.casita{
+    width: 20px;
+    background-color: white;
+}
+
+
 .botonesPhone{
     display: flex;
     flex-direction: row;
     margin-top: 40px;
 
+}
+
+.textoPhoned{
+    display: grid;
+    margin-top: 20px;
+
+}
+
+.textoPhone{
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(194, 191, 191) ;
+    border-radius: 20px;
+    text-decoration: none;
+    outline: none;
+    font-size: 150%;
+}
+
+.textoPhone2{
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(194, 191, 191) ;
+    border-radius: 20px;
+    text-decoration: none;
+    outline: none;
+    font-size: 150%;
 }
 
 .añadirL2, .añadirC2 , .borrar2
@@ -34,47 +94,15 @@
 }
 
 
-.cabecera{
-    display: grid;
-    grid-template-columns: 1fr ;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgb(255, 247, 247);
-    margin:0px;
-    padding: 10px;
-}
-
 .texto 
 {  
     display: none;
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    height: 100%;
-    border: 2px solid rgb(194, 191, 191) ;
-    border-radius: 20px;
-    text-decoration: none;
-    outline: none;
-    font-size: 150%;
- 
 }
 
 
 .texto2
 {  
     display: none;
-    
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    height: 100%;
-    border: 2px solid rgb(194, 191, 191) ;
-    border-radius: 20px;
-    text-decoration: none;
-    outline: none;
-    font-size: 150%;
-    margin:auto;
 }
 
    
@@ -83,16 +111,7 @@
 {
 
     display: none;
-    flex-direction: row;
-    margin-top: 20px;
-    
-    background-color: rgb(62, 64, 223);
-    color: rgb(255, 255, 255);
-    border-radius: 10px;
-    padding: 10px;
-    width: 100%;
-    height: 50px;
-    box-sizing: border-box;
+
     
  
     
@@ -114,7 +133,71 @@
 }
 
 
+.huno{
+    margin-top: 220px;
+}
 
+.lactis1 , .lactis2{
+    font-size: 100%;
+}
+
+
+.dad{
+    
+
+   display: flex;
+   width: 100%;
+
+}
+
+.tableroListaUno{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    margin: 1%;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(190, 186, 186);
+    background-color: rgb(243, 239, 239);
+    box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 50%;
+    height: 100%;
+    width: 50%;
+    height:100%
+}
+
+.tableroListaUno , ul{
+    list-style: none;
+}
+
+.tableroListaDos{
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+    margin: 1%;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(190, 186, 186);
+    background-color: rgb(243, 239, 239);
+    box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 50%;
+    height: 100%;
+    width: 50%;
+    height: 100%
+}
+
+.vacio{
+    text-align: center;
+    margin: 0%;
+}
+
+.product{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
 
 
 

@@ -1,7 +1,10 @@
 <template>
 <div class="dady">
+
  <header  class="cabecera" >
-    <a href="/"><button>Back</button></a>
+   <nav>
+  <a href="/" class="linkRegreso"><button class="regreso"><img class="casita" src="@/assets/icons/casa.png"></button></a>
+   </nav>
     <input type="text" class="texto"  placeholder="Añadir Producto" v-model="value"/>
     <input type="text"  class="texto2" placeholder="Añadir fecha" v-model="value2"/>
       
@@ -9,8 +12,9 @@
     <button  class="añadirC" v-on:click="añadir2()">Añadir a Lista 2</button>
     <button  class="borrar" v-on:click="eliminar()" >Borrar</button>
 
-      <div class="textoPhone">
+      <div class="textoPhoned">
         <input type="text" class="textoPhone"  placeholder="Añadir Producto" v-model="value"/>
+        <br />
         <input type="text"  class="textoPhone2" placeholder="Añadir fecha" v-model="value2"/>
       </div>
 
@@ -36,29 +40,34 @@
     
 <div class="tableroListaUno">
     <ul v-if="mostrar">
-<li  v-for="(l, index) in lista" v-bind:key="index">
-    <strong>{{l.titulo}}-{{l.fecha}}-{{index}}</strong>
+<li class="product"  v-for="(l, index) in lista" v-bind:key="index">
+    <strong>{{l.titulo}}/{{l.fecha}}</strong>
     <input type="checkbox" v-model="l.eliminar">
 </li>
 
 </ul>
-<div v-else>No hay Datos</div>
+<div v-else class="vacio">No hay Datos</div>
 </div>
 
 
 
 <div class="tableroListaDos">
-        <ul v-if="mostrar2">
-<li  v-for="(f, index) in lista2" v-bind:key="index">
-    <strong>{{f.titulo}}-{{f.fecha}}-{{index}}</strong>
+  <ul v-if="mostrar2">
+    <li   v-for="(f, index) in lista2" v-bind:key="index">
+      <div class="product">
+      <p><strong>{{f.titulo}}</strong></p>
+      <p>/{{f.fecha}}</p>
           <input type="checkbox"  v-model="f.eliminar">
-
+      </div>
+  
 
 </li>
+
 </ul>
-<div v-else>
+<div v-else class="vacio">
   No hay Datos
   </div>
+
 </div>
 
  </div>
@@ -81,7 +90,7 @@ export default{
         check:false,
         contador:0,
         value:"",
-        value2:0,
+        value2:"",
         lista:[],
         lista2:[],
        
@@ -100,7 +109,7 @@ export default{
         console.log(this.lista)
         this.mostrar=true
         this.value = ""
-        this.value2 = 0
+        this.value2 = ""
         this.contador++
       },
 
@@ -110,7 +119,7 @@ export default{
         this.mostrar2=true
         this.contador++
         this.value = ""
-        this.value2 = 0
+        this.value2 = ""
         console.log(this.contador)
       },
 

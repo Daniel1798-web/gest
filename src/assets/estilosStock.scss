@@ -36,6 +36,19 @@ body
     padding: 10px;
 }
 
+.regreso{
+    display: flex;
+    padding: 10px;
+    border-radius: 10%;
+    background-color: white;
+}
+
+.casita{
+    width: 40px;
+    background-color: white;
+}
+
+
 .añadirL, .añadirC , .borrar
 {
 
@@ -154,6 +167,10 @@ body
     box-sizing: border-box;
     width: 50%;
     height: 50%;
+}
+
+.tableroListaUno , ul{
+    list-style: none;
 }
 
 
