@@ -1,13 +1,20 @@
 <template>
 <div class="dady">
  <header  class="cabecera" >
-    <button>Back</button>
+    <a href="/"><button>Back</button></a>
     <input type="text" class="texto"  placeholder="Añadir Producto" v-model="value"/>
     <input type="text"  class="texto2" placeholder="Añadir fecha" v-model="value2"/>
       
     <button  class="añadirL" v-on:click="añadir()">Añadir a Lista 1</button>
     <button  class="añadirC" v-on:click="añadir2()">Añadir a Lista 2</button>
     <button  class="borrar" v-on:click="eliminar()" >Borrar</button>
+
+      <div class="textoPhone">
+        <input type="text" class="textoPhone"  placeholder="Añadir Producto" v-model="value"/>
+        <input type="text"  class="textoPhone2" placeholder="Añadir fecha" v-model="value2"/>
+      </div>
+
+
 
     <div class="botonesPhone">
     <button  class="añadirL2" v-on:click="añadir()">Añadir a Lista 1</button>
