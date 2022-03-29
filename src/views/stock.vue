@@ -2,28 +2,34 @@
 <div class="dady">
 
  <header  class="cabecera" >
+
    <nav>
   <a href="/" class="linkRegreso"><button class="regreso"><img class="casita" src="@/assets/icons/casa.png"></button></a>
    </nav>
+
+   <div class="bat">
     <input type="text" class="texto"  placeholder="Añadir Producto" v-model="value"/>
     <input type="text"  class="texto2" placeholder="Añadir fecha" v-model="value2"/>
-      
+   </div>
+
+   <div class="botones">
     <button  class="añadirL" v-on:click="añadir()">Añadir a Lista 1</button>
     <button  class="añadirC" v-on:click="añadir2()">Añadir a Lista 2</button>
     <button  class="borrar" v-on:click="eliminar()" >Borrar</button>
+   </div>
 
+        <!--PhoneVersion -->
+        
       <div class="textoPhoned">
         <input type="text" class="textoPhone"  placeholder="Añadir Producto" v-model="value"/>
         <br />
         <input type="text"  class="textoPhone2" placeholder="Añadir fecha" v-model="value2"/>
       </div>
 
-
-
     <div class="botonesPhone">
-    <button  class="añadirL2" v-on:click="añadir()">Añadir a Lista 1</button>
-    <button  class="añadirC2" v-on:click="añadir2()">Añadir a Lista 2</button>
-    <button  class="borrar2" v-on:click="eliminar()" >Borrar</button>
+      <button  class="añadirL2" v-on:click="añadir()">Añadir a Lista 1</button>
+      <button  class="añadirC2" v-on:click="añadir2()">Añadir a Lista 2</button>
+      <button  class="borrar2" v-on:click="eliminar()" >Borrar</button>
     </div>
     
 </header>
@@ -52,11 +58,11 @@
 
 
 <div class="tableroListaDos">
-  <ul v-if="mostrar2">
+  <ul v-if="mostrar2"  class="product">
     <li   v-for="(f, index) in lista2" v-bind:key="index">
-      <div class="product">
-      <p><strong>{{f.titulo}}</strong></p>
-      <p>/{{f.fecha}}</p>
+      <div>
+      <p class="titulo"><strong>{{f.titulo}}</strong></p>
+      <p class="fecha"> {{f.fecha}}</p>
           <input type="checkbox"  v-model="f.eliminar">
       </div>
   
@@ -137,7 +143,7 @@ export default{
 </script>
 
 <style  lang="scss" >
-  @import '@/assets/estilosStock.scss';
+  @import '@/assets/css/estilosStock.scss';
   @import '@/assets/phone/stockPhone.scss';
 
 

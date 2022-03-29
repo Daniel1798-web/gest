@@ -6,14 +6,15 @@
 <div class="padre">
 
     <div class="pi">
-
+       
         <div class="imagenes"  >
-                <h2>Crear Nuevo Stock</h2>
-            <a :href="ruta"><img class="imagen" src="@/assets/icons/cajitas.png"></a>
-               <h2> Revisar stocks</h2>
-             <img class="imagen"  src="@/assets/icons/papeles.png">
-               <h2>Información</h2>
-                <img class="imagen" src="@/assets/icons/ask.png" >
+             
+    <a :href="ruta"><h2 class="nombreImagenes">Crear Nuevo Stock</h2><img class="imagen" src="@/assets/icons/cajitas.png"></a>
+            
+       <a><h2 class="nombreImagenes"> Revisar stocks</h2> <img class="imagen"  src="@/assets/icons/papeles.png"></a>
+                            
+
+        <a><h2 class="nombreImagenes">Información</h2><img class="imagen" src="@/assets/icons/ask.png" ></a>
 
         </div>
     </div>

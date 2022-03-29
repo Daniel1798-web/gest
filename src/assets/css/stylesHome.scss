@@ -17,29 +17,39 @@
     .pi{
         display: flex;
         flex-direction: row;
+
     }
+
 
     .imagenes{
       display: flex;
         flex-direction: row;
-        justify-content:space-between;
+        justify-content:center;
         margin-top: 250px;
-        margin-left:20%;
         width: 100%;
         background-color: rgb(255, 255, 255);
 
     }
 
+
     .imagen{
         width:200px;
-       
+        margin-left: 150px;
+
+        display: flex;
+        justify-content: center;
 
     }
 
-    .imagen2{
-        width: 500px;
-        border: 2px solid black;
+    .nombreImagenes{
+      text-align: center;
+      margin-left: 150px;
     }
+
+
+   
+
+ 
 
     .tecnicservice{
       display: flex;
