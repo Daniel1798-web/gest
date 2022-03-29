@@ -7,16 +7,15 @@
   <a href="/" class="linkRegreso"><button class="regreso"><img class="casita" src="@/assets/icons/casa.png"></button></a>
    </nav>
 
-   <div class="bat">
     <input type="text" class="texto"  placeholder="Añadir Producto" v-model="value"/>
     <input type="text"  class="texto2" placeholder="Añadir fecha" v-model="value2"/>
-   </div>
+   
 
-   <div class="botones">
+   
     <button  class="añadirL" v-on:click="añadir()">Añadir a Lista 1</button>
     <button  class="añadirC" v-on:click="añadir2()">Añadir a Lista 2</button>
     <button  class="borrar" v-on:click="eliminar()" >Borrar</button>
-   </div>
+   
 
         <!--PhoneVersion -->
         
