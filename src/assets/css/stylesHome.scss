@@ -33,9 +33,11 @@
 
 
     .imagen{
+      display: flex;
         width:200px;
         margin-left: 150px;
-
+        border: 2px solid rgb(48, 233, 233);
+        height: auto;
         display: flex;
         justify-content: center;
 
