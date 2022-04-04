@@ -9,12 +9,12 @@
        
         <div class="imagenes"  >
              
-    <a :href="ruta"><h2 class="nombreImagenes">Crear Nuevo Stock</h2><img class="imagen" src="@/assets/icons/cajitas.png"></a>
+    <a class="a" :href="ruta"><h2 class="nombreImagenes">Crear Nuevo Stock</h2><img class="imagen" src="@/assets/icons/cajitas.png"></a>
             
-       <a><h2 class="nombreImagenes"> Revisar stocks</h2> <img class="imagen"  src="@/assets/icons/papeles.png"></a>
+       <a class="a"><h2 class="nombreImagenes"> Revisar stocks</h2> <img class="imagen"  src="@/assets/icons/cajitas.png"></a>
                             
 
-        <a><h2 class="nombreImagenes">Información</h2><img class="imagen" src="@/assets/icons/ask.png" ></a>
+        <a class="a"><h2 class="nombreImagenes">Información</h2><img class="imagen" src="@/assets/icons/ask.png" ></a>
 
         </div>
     </div>
