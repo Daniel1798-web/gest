@@ -57,15 +57,14 @@
 
 
 <div class="tableroListaDos">
-  <ul v-if="mostrar2"  class="product">
-    <li   v-for="(f, index) in lista2" v-bind:key="index">
-      <div>
-      <p class="titulo"><strong>{{f.titulo}}</strong></p>
-      <p class="fecha"> {{f.fecha}}</p>
-          <input type="checkbox"  v-model="f.eliminar">
+  <ul v-if="mostrar2" class="ulproduct" >
+    <li  class="product" v-for="(f, index) in lista2" v-bind:key="index">
+      <div class="cosa">
+  <p class="productText">
+    <strong>{{f.titulo}}/{{f.fecha}}</strong>
+        <input type="checkbox" class="check"  v-model="f.eliminar">
+  </p>
       </div>
-  
-
 </li>
 
 </ul>

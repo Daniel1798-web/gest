@@ -202,12 +202,35 @@ body
 {
    display: flex;
    justify-content: space-between;
-   
 }
+
+.ulproduct{
+    margin: 0;
+    margin-right: 100px;
+    width: 100%;
+}
+
+.product{
+    margin: 0;
+}
+
+.productText{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+}
+
 
 
 
 .check
 {
+    margin-right: 100px;
     float: right;
+}
+
+.cosa{
+    display: flex;
+    justify-content: start;
+   
 }
