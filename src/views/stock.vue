@@ -44,10 +44,9 @@
  <div class="dad">
     
 <div class="tableroListaUno">
-    <ul v-if="mostrar">
+    <ul v-if="mostrar" class="ulproduct">
 <li class="product"  v-for="(l, index) in lista" v-bind:key="index">
-    <strong>{{l.titulo}}/{{l.fecha}}</strong>
-    <input type="checkbox" v-model="l.eliminar">
+  <p class="productText">{{l.titulo}}/{{l.fecha}}<input type="checkbox" class="check" v-model="l.eliminar"></p>
 </li>
 
 </ul>
@@ -59,13 +58,9 @@
 <div class="tableroListaDos">
   <ul v-if="mostrar2" class="ulproduct" >
     <li  class="product" v-for="(f, index) in lista2" v-bind:key="index">
-      <div class="cosa">
-  <p class="productText">
-    <strong>{{f.titulo}}/{{f.fecha}}</strong>
-        <input type="checkbox" class="check"  v-model="f.eliminar">
-  </p>
-      </div>
-</li>
+    <p class="productText">{{f.titulo}} {{f.fecha}}<input type="checkbox" class="check"  v-model="f.eliminar"></p>
+    
+    </li>
 
 </ul>
 <div v-else class="vacio">
