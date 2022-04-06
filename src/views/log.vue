@@ -12,17 +12,18 @@
 
 
 
-        <div class="cartaLog" v-if="name ? 'carlitos' : r">
+        <div class="cartaLog" v-if="name === 'carlitos' && ID === 14">
             <div class="cartaHijo">
+                <a  href="/home"><button  v-on:click="entrar">ENTRAR</button> </a>
+
                 <div class="datosHijo">
                     <p>name:<input class="datosTexto" v-model="name"  readonly="readonly" disabled></p>
                      <p>ID:<input class="datosTexto" v-model="ID"  readonly="readonly" disabled></p>
                 </div>
             </div>
         </div>
-        <button v-on:click="entrar">Entrar</button>
 
-       <a v-show="r" href="/home"><button  v-on:click="entrar">ENTRAR</button> </a>
+      
 
 
     </div>
@@ -44,8 +45,7 @@
 
                 computed:{
                     entrar(){
-                        this.name = "carlitos"
-                        this.ID = 10
+                      
                         return this.r = true
                     }
                 }
