@@ -4,14 +4,16 @@
             <div class="cua">
                     <h1 class="help">{{t}}</h1>
                 <div class="inputsTable">
-
                     <input type="text" class="entradaTexto" v-model="name" placeholder="Name">
                     <div class="espacio"></div>
                     <input type="number" class="entradaTexto" v-model="ID" placeholder="ID">
+                    <button v-on:click="format">comprobar</button>
+
             </div> 
         </div>
 
     </div>
+    <p>{{formatName}}</p>
 <div v-if="name === 'user' && ID === 14">
      <a  href="/home"><button  v-on:click="entrar">ENTRAR</button> </a>
 </div>
@@ -41,6 +43,7 @@
                 data(){
                     return{
                         name:"",
+                        formatName:"",
                         ID:"",
                         r:false,
                         t: "si eres nuevo usa"+" "+"name:user"+" "+" "+ "ID:14",
@@ -53,6 +56,17 @@
                     entrar(){
                       
                         return this.r = true
+                    }
+                },
+                watch:{
+                    name(newVal, oldVal){
+                        console.log(newVal, oldVal)
+                    }
+                },
+
+                methods:{
+                    format(){
+                        this.name = this.name.split(' ').join('--').toLowerCase()
                     }
                 }
             
