@@ -4,7 +4,7 @@
  <header  class="cabecera" >
 
    <nav>
-  <a href="/" class="linkRegreso"><button class="regreso"><img class="casita" src="@/assets/icons/casa.png"></button></a>
+  <a href="/home" class="linkRegreso"><button class="regreso"><img class="casita" src="@/assets/icons/casa.png"></button></a>
    </nav>
 
     <input type="text" class="texto"  placeholder="Añadir Producto" v-model="value"/>

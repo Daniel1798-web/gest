@@ -1,0 +1,98 @@
+
+    body{
+        background-color: rgb(252, 252, 252);
+    }
+
+    .padreLog{
+      background-color: rgb(255, 255, 255);
+    }
+
+    .inputUser{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        color: yellow;
+    }
+
+    .cua{
+        width: 100%;
+        height: 300px;
+        background-color: rgb(189, 189, 189);
+        display: flex;
+        justify-content: center;
+    }
+
+    .inputsTable{
+            margin-left: 0;
+            width: 100%;
+            margin-top: 200px;
+            display: flex;
+            flex-direction:row;
+            justify-content: space-between;
+        }
+
+        .espacio{
+            width: 10%;
+            padding: 50px;
+            margin-left: 20px;
+        }
+
+    .entradaTexto{
+    display: inline;
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    height: 40%;
+    border: 2px solid rgb(194, 191, 191) ;
+    border-radius: 20px;
+    text-decoration: none;
+    outline: none;
+    font-size: 150%;
+    }
+
+    .cartaLog{
+        width: 700px;
+        height: 500px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        color: yellow;
+      
+        }
+
+        .cartaHijo{
+            width: 500px;
+            height: 300px;
+            background-color: red;
+
+        }
+
+        .datosHijo{
+            margin-top: 200px;
+            margin-left: 0;
+            width: 100%;
+            height: 120px;
+            background-color: blue;
+            display: flex;
+            flex-direction:column;
+            justify-content: start;
+        }
+
+        .datosTexto{
+            margin-top: 10px;
+            display: inline;
+            margin-left: 10px;
+            margin-right: 100px;
+            border: 0;
+            background-color: blue;
+            color: black;
+
+        }
