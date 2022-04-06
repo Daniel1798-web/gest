@@ -23,16 +23,20 @@
         width: 100%;
         height: 300px;
         background-color: rgb(189, 189, 189);
-        display: flex;
-        justify-content: center;
+       
+    }
+    
+    .help{
+        height: 50px;
+        width: 100%;
     }
 
     .inputsTable{
             margin-left: 0;
-            width: 100%;
-            margin-top: 200px;
+            width: 50%;
+            height: 50px;
             display: flex;
-            flex-direction:row;
+            flex-direction:column;
             justify-content: space-between;
         }
 
@@ -55,33 +59,23 @@
     }
 
     .cartaLog{
-        width: 700px;
-        height: 500px;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: 100%;
+        color: rgb(0, 0, 0);
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: auto;
-        color: yellow;
       
         }
 
         .cartaHijo{
-            width: 500px;
+            width: 100%;
             height: 300px;
-            background-color: red;
 
         }
 
         .datosHijo{
-            margin-top: 200px;
             margin-left: 0;
             width: 100%;
             height: 120px;
-            background-color: blue;
-            display: flex;
             flex-direction:column;
             justify-content: start;
         }
@@ -92,7 +86,11 @@
             margin-left: 10px;
             margin-right: 100px;
             border: 0;
-            background-color: blue;
+            font-size: 25px;
             color: black;
+            background-color:rgb(255, 255, 255) ;
+        }
 
+        .dhp{
+            font-size: 25px;
         }
