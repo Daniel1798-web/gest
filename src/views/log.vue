@@ -7,7 +7,7 @@
                     <input type="text" class="entradaTexto" v-model="name" placeholder="Name">
                     <div class="espacio"></div>
                     <input type="number" class="entradaTexto" v-model="ID" placeholder="ID">
-                    <button @:click="format">comprobar</button>
+                    <button v-on:click="format">comprobar</button>
 
             </div> 
         </div>
@@ -66,7 +66,7 @@
 
                 methods:{
                     format(){
-                        this.name = this.name.split(' ').join('--').toLowerCase()
+                       this.name =   this.name.toLowerCase()
                     }
                 }
             

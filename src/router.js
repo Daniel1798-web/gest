@@ -11,7 +11,7 @@ export default createRouter({
     history,
     routes: [
         {
-            path:"/",
+            path:"/home",
             name:"home",
             component:home
         },
@@ -20,6 +20,13 @@ export default createRouter({
             name:"stock",
             component:stock
         },
+        {
+            path:"/",
+            name:"log",
+            component:log
+        },
+
+
        
 
 
