@@ -21,6 +21,8 @@ export default {
 
   html{
     background-color: rgba(255, 255, 255, 0.952);
+    margin: 0px;
+    padding: 0px;
   }
 
   body{
@@ -31,7 +33,7 @@ export default {
     display: grid;
     gap: 1rem;
     grid-auto-rows: 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 50rem), 1fr));
+    grid-template-columns: 1fr;
     position: relative;
    
     overflow-x:hidden;
