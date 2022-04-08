@@ -13,9 +13,10 @@
         background-size: cover;
         background-position: center center;
         background-color: black;
-        height: 1200px;
+        height: 100%;
         max-width: 100%;
         margin-bottom: 0;
+        position: fixed;
      
 
         
@@ -34,8 +35,8 @@
           display: flex;
           justify-content: center;
           height: 300px;
-          margin-bottom: 500px;
-          color: yellow;
+          margin-right: auto;
+          margin-left: auto;
       }
   
       .cua{
