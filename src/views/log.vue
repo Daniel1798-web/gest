@@ -1,7 +1,6 @@
 <template>
     <div class="padreLog">
-        <div class="hijo">
-            <h1 class="help">{{t}}</h1>
+        <h1 class="help">{{t}}</h1>
 
         <div class="inputUser">
 
@@ -23,20 +22,10 @@
     </div>
 
 
-        <div class="cartaLog" >
-           
-            <div class="cartaHijo">
-
-                <div class="datosHijo">
-                    <p class="dhp">name:<input class="datosTexto" v-model="name"  readonly="readonly" disabled></p>
-                     <p class="dhp">ID:<input class="datosTexto" v-model="ID"  readonly="readonly" disabled></p>
-                </div>
-            </div>
-        </div>
+    
 
       
 
-        </div>
     </div>
 
 
@@ -52,7 +41,7 @@
                         formatName:"",
                         ID:"",
                         r:false,
-                        t: "si eres nuevo usa"+" "+"name:user"+" "+" "+ "ID:14",
+                        t: "Universal User"+" "+"name:user"+" "+" "+ "ID:14",
                         c:"user",
                         d:14,
                     }
@@ -81,5 +70,5 @@
 </script>
 <style lang="scss">
     @import "@/assets/css/logStyle.scss";
-
+   
 </style>
