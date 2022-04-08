@@ -1,7 +1,8 @@
 <template>
     <div class="padreLog">
-        <h1 class="help">General User: user 14</h1>
-        
+        <div class="help">
+            <div class="help2"><p class="helpL">General User: user 14</p></div>
+        </div>
 
         <div class="inputUser">
 
@@ -71,5 +72,5 @@
 </script>
 <style lang="scss">
     @import "@/assets/css/logStyle.scss";
-   
+    @import "@/assets/phone/logPhone";
 </style>

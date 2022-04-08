@@ -1,0 +1,121 @@
+
+      @media(max-width:500px){ 
+
+    .padreLog{
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        grid-template-columns: 1fr;
+        background-image: url('@/assets/icons/fondoLog.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center center;
+        background-color: black;
+        height: 100vh;
+        width: 100%;
+      }
+  
+      .hijo{
+          justify-content: center;
+          flex-direction: column; 
+          margin-bottom: 100px;
+      }
+  
+      .inputUser{
+          width: 100%;
+          margin: 0;
+          margin-top: 0px;
+          display: flex;
+          justify-content: center;
+          height: 300px;
+          margin-bottom: 200px;
+          color: yellow;
+      }
+  
+      .cua{
+          width: 500px;
+          height: 300px;
+      }
+      
+      .help{
+          margin: 0px;
+          height: 10px;
+          display: flex;
+          justify-content: center;
+          }
+  
+      .help2{
+          margin: 0px;
+          width: 50%;
+         display: flex;
+         justify-content: center;
+         margin-top: 100px;
+      }
+  
+      .helpL{
+         
+          font-size: 40px;
+      }
+  
+      .inputsTable{
+          justify-content: center;
+          width: 100%;
+          }
+  
+          .tablas
+          { 
+          width: 100%;
+          }
+  
+  
+          .espacio{
+              width: 10%;
+              margin-top: 20px;
+          }
+  
+         
+  
+      .entradaTexto{
+      margin-left: 100px;
+      margin-top: 50px;
+      display: flex;
+      background-color: rgb(255, 255, 255);
+      width: 50%;
+      height: 10%;
+      border: 2px solid rgb(194, 191, 191) ;
+      border-radius: 20px;
+      text-decoration: none;
+      outline: none;
+      font-size: 150%;
+      }
+  
+      .bt-ch{
+          display: flex;
+          justify-content: center;
+          margin-top: 50px;
+          font-size: 20px;
+          width: 50%;
+          margin-left: 100px;
+          border-radius: 20px;
+  
+      }
+  
+      .p{
+          display: flex;
+          justify-content: center;
+      }
+  
+      .bt-ch2{
+          display: flex;
+          justify-content: center;
+          margin-top: 50px;
+          font-size: 20px;
+          border-radius: 20px;
+          margin-right: 45px;
+  
+      }
+  
+      .dhp{
+              font-size: 25px;
+        }
+    }
