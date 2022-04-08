@@ -1,5 +1,7 @@
 
       @media(max-width:500px){ 
+        
+        
 
     .padreLog{
         background-color: rgb(255, 255, 255);
@@ -11,8 +13,12 @@
         background-size: cover;
         background-position: center center;
         background-color: black;
-        height: 100vh;
+        height: 100%;
         width: 100%;
+        margin-bottom: 0;
+        position: unset;
+
+        
       }
   
       .hijo{
@@ -49,7 +55,6 @@
           width: 50%;
          display: flex;
          justify-content: center;
-         margin-top: 100px;
       }
   
       .helpL{

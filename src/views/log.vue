@@ -71,6 +71,9 @@
             }
 </script>
 <style lang="scss">
+html{
+    margin: 0%;
+    padding:0%;
+}
     @import "@/assets/css/logStyle.scss";
-    @import "@/assets/phone/logPhone";
 </style>
