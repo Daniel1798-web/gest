@@ -1,24 +1,30 @@
 <template>
     <div class="padreLog">
+        <div class="hijo">
+            <h1 class="help">{{t}}</h1>
+
         <div class="inputUser">
+
             <div class="cua">
-                    <h1 class="help">{{t}}</h1>
                 <div class="inputsTable">
+                    <div class="tablas">
                     <input type="text" class="entradaTexto" v-model="name" placeholder="Name">
                     <div class="espacio"></div>
                     <input type="number" class="entradaTexto" v-model="ID" placeholder="ID">
-                    <button v-on:click="format">comprobar</button>
-
+                    <button v-on:click="format" class="bt-ch">comprobar</button>
+                </div>
             </div> 
-        </div>
 
+             <div v-if="name === 'user' && ID === 14">
+                 <a  href="/home"><button  v-on:click="entrar">ENTRAR</button> </a>
+            </div>
+        </div>
+            
     </div>
-    <p>{{formatName}}</p>
-<div v-if="name === 'user' && ID === 14">
-     <a  href="/home"><button  v-on:click="entrar">ENTRAR</button> </a>
-</div>
+
 
         <div class="cartaLog" >
+           
             <div class="cartaHijo">
 
                 <div class="datosHijo">
@@ -30,7 +36,7 @@
 
       
 
-
+        </div>
     </div>
 
 
