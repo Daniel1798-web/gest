@@ -1,6 +1,7 @@
 <template>
     <div class="padreLog">
-        <h1 class="help">{{t}}</h1>
+        <h1 class="help">General User: user 14</h1>
+        
 
         <div class="inputUser">
 
@@ -14,8 +15,8 @@
                     </div>
             </div> 
 
-             <div v-if="name === 'user' && ID === 14">
-                 <a  href="/home"><button  v-on:click="entrar">ENTRAR</button> </a>
+             <div class="p" v-if="name === 'user' && ID === 14">
+                 <a  href="/home"><button class="bt-ch2"  v-on:click="entrar">ENTRAR</button> </a>
             </div>
         </div>
             

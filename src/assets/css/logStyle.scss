@@ -88,8 +88,21 @@
 
     }
 
-  
+    .p{
+        display: flex;
+        justify-content: center;
+    }
 
-        .dhp{
+    .bt-ch2{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        font-size: 20px;
+        border-radius: 20px;
+        margin-right: 45px;
+
+    }
+
+    .dhp{
             font-size: 25px;
-        }
+      }
