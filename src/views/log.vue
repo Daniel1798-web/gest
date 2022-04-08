@@ -12,7 +12,7 @@
                     <div class="espacio"></div>
                     <input type="number" class="entradaTexto" v-model="ID" placeholder="ID">
                     <button v-on:click="format" class="bt-ch">comprobar</button>
-                </div>
+                    </div>
             </div> 
 
              <div v-if="name === 'user' && ID === 14">
