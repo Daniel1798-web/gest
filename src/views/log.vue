@@ -1,8 +1,6 @@
 <template>
     <div class="padreLog">
-        <div class="help">
-            <div class="help2"><p class="helpL">General User: user 14</p></div>
-        </div>
+      
 
         <div class="inputUser">
 
@@ -13,6 +11,7 @@
                     <div class="espacio"></div>
                     <input type="number" class="entradaTexto" v-model="ID" placeholder="ID">
                     <button v-on:click="format" class="bt-ch">comprobar</button>
+                    <button class="bt-ch" v-on:click="ayuda">HELP</button>
                     </div>
             </div> 
 
@@ -64,6 +63,10 @@
                 methods:{
                     format(){
                        this.name =   this.name.toLowerCase()
+                    },
+
+                    ayuda(){
+                        alert("Clave general:"+" "+"user"+" "+"14")
                     }
                 }
             
