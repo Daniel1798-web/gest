@@ -40,8 +40,10 @@
                 <div class="hijo2">
                     <div class="contenido">
                         <div class="infor">
-                            <img class="inforImg" src="@/assets/logo.png">
+                            <div class="inforNumber">
+                            <img class="inforImg" src="@/assets/icons/telefono.png">
                             <h2 class="in">352-000-0000</h2>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -109,7 +109,15 @@
     .infor{
       display: flex;
       justify-content: flex-start;
+     
       
+    }
+
+    .inforNumber{
+      margin-top: 300px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
     }
 
     .inforImg{
@@ -118,7 +126,7 @@
     }
     .in{
       display: flex;
-      width: 50%;
+      width: 100%;
       margin-top: 20px;
       font-size: 50px;
     }
