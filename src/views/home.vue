@@ -4,8 +4,10 @@
 <headersito class="heder"/>
 
 <div class="padre">
+        <headersito class="hederPhone"/>
 
     <div class="pi">
+
        
         <!--<div class="imagenes"  >
              
