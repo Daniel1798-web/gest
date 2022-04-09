@@ -27,8 +27,8 @@
                             <li v-for="st in sto" :key="st"><a href="#">{{st.titulo}} {{st.fecha}}</a></li>
                         </ul>   
                     </li>
-                    <li>
-                    <a href="#" >INFORMACIÓN</a>
+                    <li class="SecInformacion" v-on:click="mostrar">
+                    <a href="#"  >INFORMACIÓN</a>
                         <ul class="menuVertical">
                         </ul>   
                     </li>
@@ -38,9 +38,23 @@
 
             <div class="padre2">
                 <div class="hijo2">
-                    <div class="contenido">
-                        <div class="infor">
+                    <div class="SecInfo" v-show="informationSection">
+                        <div class="textIn">
+                            <div class="contenido1"> 
+                                <p class="contenido3">{{informacion}}</p>
+                            </div>
+                        </div>
+
+
+                        <div class="inforCompany">
                             <div class="inforNumber">
+                        <img class="inforImg" src="@/assets/icons/microsoft.png">
+                        <h2 class="in1">OSITO ACADEMY</h2>
+                            </div>
+                         </div>
+
+                        <div class="infor">
+                                <div class="inforNumber">
                             <img class="inforImg" src="@/assets/icons/telefono.png">
                             <h2 class="in">352-000-0000</h2>
                             </div>
@@ -69,10 +83,17 @@ import headersito from '@/components/header.vue'
             return{   
                 ruta:"/stock",  
                 sto:[{titulo:"stock", fecha:"20/05/22"}, {titulo:"stock", fecha:"24/08/22"}]  ,        
-                informacion:`Esta pagina se realizo por Osito company /
-                gracias por la visita`,
+                informacion:`Contactenos ante cualquier inconveniente`,
+                informationSection:false,
             }
         },
+        methods:{
+
+                mostrar(){
+                    this.informationSection = !this.informationSection
+                }
+
+        }
 
         
      

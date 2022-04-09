@@ -98,11 +98,31 @@
       margin-top: 150px;
     }
 
-    .contenido{
+    
+
+    .SecInfo{
       width: 100%;
       height: 100%;
-      background-color: green;
+      background-color: rgb(255, 255, 255);
     }
+
+    .textIn{
+      width: 100%;
+      height: 200px;
+    }
+
+    .contenido1{
+      color: rgb(0, 0, 0);
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .contenido3{
+      margin-top: 80px;
+      font-size: 30px;
+      }
 
    
 
@@ -113,8 +133,14 @@
       
     }
 
+    .inforCompany{
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+    }
+
     .inforNumber{
-      margin-top: 300px;
+      margin-top: 0px;
       width: 100%;
       display: flex;
       justify-content: flex-start;
@@ -122,13 +148,21 @@
 
     .inforImg{
       width: 100px;
+      height: 90px;
       margin: 10px;
     }
     .in{
       display: flex;
       width: 100%;
       margin-top: 20px;
-      font-size: 50px;
+      font-size: 40px;
+    }
+
+    .in1{
+      display: flex;
+      width: 100%;
+      margin-top: 40px;
+      font-size: 30px;
     }
    
 

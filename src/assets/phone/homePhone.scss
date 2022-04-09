@@ -21,14 +21,20 @@
     
 }
 
+.pa{
+  margin-right: 0px;
+}
+
+
+
 .horizontal{
   margin-top: 0px;
-  margin: 0px;
+  margin-right: 0px;
   padding: 0px;
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content:space-between;
   background-color: rgb(152, 223, 207);
 }
 
@@ -36,8 +42,8 @@
 
 .horizontal > li > a {
   display: block;
-  margin: 10px;
-  padding: 10px 10px;
+  margin: 0px;
+  padding: 0px 10px;
   color: white;
   text-decoration: none;
 color: white;
@@ -86,39 +92,73 @@ margin-top: 150px;
 background-color: transparent;
 }
 
-.contenido{
-width: 300px;
-height: 300px;
-margin-right: 0px;
-margin-left: 65px;
-background-color: green;
+.SecInfo{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
 }
+
+.textIn{
+  width: 100%;
+  height: 100px;
+}
+
+.contenido1{
+  color: rgb(0, 0, 0);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.contenido3{
+  margin-top: 20px;
+  font-size: 30px;
+  }
 
 
 
 .infor{
-display: flex;
-justify-content: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 0px;
+  margin-bottom: 200px;
+}
 
+.inforCompany{
+  width: 100%;
+  height: 50px;
+  margin-top: 50px;
 
+  display: flex;
+  justify-content: flex-start;
 }
 
 .inforNumber{
-margin-top: 220px;
-width: 100%;
-display: flex;
-justify-content: flex-start;
+  margin-top: 20px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .inforImg{
-width: 50px;
-height: 40px;
-margin: 10px;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
 }
 .in{
-display: flex;
-margin-top: 20px;
-font-size: 20px;
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.in1{
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
 }
 
 
