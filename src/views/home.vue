@@ -7,7 +7,7 @@
 
     <div class="pi">
        
-        <div class="imagenes"  >
+        <!--<div class="imagenes"  >
              
     <a class="a" :href="ruta"><h2 class="nombreImagenes">Crear Nuevo Stock</h2><img class="imagen" src="@/assets/icons/cajitas.png"></a>
             
@@ -16,7 +16,25 @@
 
         <a class="a"><h2 class="nombreImagenes">Información</h2><img class="imagen" src="@/assets/icons/ask.png" ></a>
 
-        </div>
+        </div>-->
+
+            <nav class="pa">
+                <ul class="horizontal">
+                    <li ><a :href="ruta" >CREAR STOCK</a></li>
+                    <li>
+                    <a href="#" >STOCKS GUARDADOS</a>
+                        <ul class="menuVertical" >
+                            <li v-for="st in sto" :key="st"><a href="#">{{st.titulo}} {{st.fecha}}</a></li>
+                        </ul>   
+                    </li>
+                    <li>
+                    <a href="#" >INFORMACIÓN</a>
+                        <ul class="menuVertical">
+                        </ul>   
+                    </li>
+                </ul>
+            </nav>
+
     </div>
        
 
@@ -35,10 +53,15 @@ import headersito from '@/components/header.vue'
 
         data(){
             return{   
-                ruta:"/stock",            
+                ruta:"/stock",  
+                sto:[{titulo:"stock", fecha:"20/05/22"}, 
+                        {titulo:"stock", fecha:"24/08/22"}
+                ]          
                 
             }
         },
+
+        
      
     }
 

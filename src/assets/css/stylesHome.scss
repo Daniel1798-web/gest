@@ -1,4 +1,11 @@
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans';
+}
+
 .heder{
   top: 0;
   left: 0;
@@ -12,22 +19,75 @@
     .padre{
       display: grid;
       grid-template-columns: 1fr;
-   background-color: rgb(177, 213, 214);
+   background-color: rgb(255, 255, 255);
       height: 100vh;
       width: 100%;
-      background-image: url('@/assets/icons/fondoLog4.jpeg');
     }
 
     .pi{
         flex-direction: row;
         justify-content: center;
+        margin-top: 80px;
     }
+
+    .pa{
+      font-size: 20px;
+      margin: auto;
+    }
+
+    .horizontal{
+      margin-top: 0px;
+      margin: 0px;
+      padding: 0px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      background-color: black;
+    }
+
+
+
+      .horizontal > li > a {
+        display: block;
+        margin: 10px;
+        padding: 10px 10px;
+        color: white;
+        text-decoration: none;
+      color: white;
+      }
+
+      .horizontal > li > a:hover{
+        color: gold;
+      }
+
+    .menuVertical{
+      position: absolute;
+      display: none;
+      list-style: none;
+      width: 200px;
+      background-color:rgba(0,0,0,.5)
+    }
+
+    .horizontal > li:hover .menuVertical{
+      display: block;
+    }
+
+    .menuVertical li:hover{
+      background-color: black;
+    }
+
+   .menuVertical li a{
+     display: block;
+     color: white;
+     padding: 15px 15px 15px 20px;
+   }
 
 
     .imagenes{
       display: flex;
         flex-direction: row;
-        justify-content:center;
+        justify-content:space-around;
         margin-top: 250px;
         width: 100%;
     }
@@ -38,7 +98,7 @@
     .imagen{
       display: flex;
         width:200px;
-        margin-left: 150px;
+        margin-left: 0px;
         border: 2px solid rgb(48, 233, 233);
         height: auto;
         display: flex;
@@ -61,7 +121,7 @@
 
     .nombreImagenes{
       text-align: center;
-      margin-left: 150px;
+      margin-left: 0px;
     }
 
 
