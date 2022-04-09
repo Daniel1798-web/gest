@@ -2,12 +2,13 @@
     
 
     .padreLog{
-      background-color: rgb(255, 255, 255);
       display: grid;
       grid-template-columns: 1fr;
    background-color: rgb(177, 213, 214);
       height: 100vh;
       width: 100%;
+      background-image: url('@/assets/icons/fondoLog4.jpeg');
+      position: fixed;
     }
 
     .hijo{
@@ -17,24 +18,18 @@
     }
 
     .inputUser{
-        width: 50%;
-        height: 50%;
+        width: 100%;
+        height: 100%;
         margin: 0;
-        margin-top: 200px;
-        margin-left: 300px;
+        margin-top: 250px;
         display: flex;
         justify-content: center;
-        margin-bottom: 200px;
         color: yellow;
-        background-image: url('@/assets/icons/fondoLog.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center center;
+    
     }
 
     .cua{
-        width: 500px;
+        width: 550px;
         height: 300px;
     }
     
@@ -44,6 +39,7 @@
     .inputsTable{
         justify-content: center;
         width: 100%;
+        margin-top: 10px;
         }
 
         .tablas
@@ -94,7 +90,7 @@
         margin-top: 50px;
         font-size: 20px;
         border-radius: 20px;
-        margin-right: 45px;
+        margin-right: 70px;
 
     }
 
