@@ -12,12 +12,13 @@
                     <input type="number" class="entradaTexto" v-model="ID" placeholder="ID">
                     <button v-on:click="format" class="bt-ch">comprobar</button>
                     <button class="bt-ch" v-on:click="ayuda">HELP</button>
+                     <div class="p" v-if="name === 'user' && ID === 14">
+                 <a  href="/home"><button class="bt-ch2"  v-on:click="entrar">ENTRAR</button> </a>
+                    </div>
                     </div>
             </div> 
 
-             <div class="p" v-if="name === 'user' && ID === 14">
-                 <a  href="/home"><button class="bt-ch2"  v-on:click="entrar">ENTRAR</button> </a>
-            </div>
+            
         </div>
             
     </div>
