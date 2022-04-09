@@ -4,7 +4,6 @@ import home from '@/views/home.vue'
 import stock from '@/views/stock.vue'
 import log from '@/views/log.vue'
 
-
 const history = createWebHistory();
 
 export default createRouter({
@@ -25,6 +24,8 @@ export default createRouter({
             name:"log",
             component:log
         },
+
+        
 
 
        

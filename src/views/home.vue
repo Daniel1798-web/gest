@@ -35,6 +35,18 @@
                 </ul>
             </nav>
 
+
+            <div class="padre2">
+                <div class="hijo2">
+                    <div class="contenido">
+                        <div class="infor">
+                            <img class="inforImg" src="@/assets/logo.png">
+                            <h2 class="in">352-000-0000</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
     </div>
        
 
@@ -54,10 +66,9 @@ import headersito from '@/components/header.vue'
         data(){
             return{   
                 ruta:"/stock",  
-                sto:[{titulo:"stock", fecha:"20/05/22"}, 
-                        {titulo:"stock", fecha:"24/08/22"}
-                ]          
-                
+                sto:[{titulo:"stock", fecha:"20/05/22"}, {titulo:"stock", fecha:"24/08/22"}]  ,        
+                informacion:`Esta pagina se realizo por Osito company /
+                gracias por la visita`,
             }
         },
 
