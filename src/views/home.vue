@@ -67,6 +67,13 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="logo" v-show="welcome"> 
+                        <div> 
+                            <h1>Bienvenidos!</h1>
+                            <img src="@/assets/icons/cola.png">
+                        </div> 
+                    </div>
                 </div>
             </div>
             <div class="footer">
@@ -118,6 +125,7 @@ import headersito from '@/components/header.vue'
 
         data(){
             return{   
+                welcome:true,
                 ruta:"/stock",  
                 sto:[{titulo:"stock", fecha:"20/05/22"}, {titulo:"stock", fecha:"24/08/22"}]  ,    
                 informacion:`Contactenos ante cualquier inconveniente`,
@@ -128,6 +136,7 @@ import headersito from '@/components/header.vue'
 
                 mostrar(){
                     this.informationSection = !this.informationSection
+                    this.welcome = !this.welcome
                 },
 
      
