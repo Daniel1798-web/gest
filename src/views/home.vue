@@ -39,7 +39,7 @@
             </nav>
 
 
-            
+
 
 
             <div class="padre2">
@@ -68,15 +68,30 @@
                     </div>
                 </div>
             </div>
+            <div class="footer">
+                    <div class="footerData">
+                        <p>Empresa: MaxLevel</p>
+                        <p>email: maxlevel@gmail.com</p>
+                        <p>Empresas Amigas</p>
+                    <div class="empresasAmigas"> 
+                        <a target="_blank" href="https://www.microsoft.com/es-ar"><img src="@/assets/icons/microsoft.png"></a>
+                        <a target="_blank" href="https://www.ea.com/es-mx/ea-play"><img src="@/assets/icons/deporte.png"></a>
+                        <a target="_blank" href="https://www.coca-cola.com.ar/"><img src="@/assets/icons/cola.png"></a>
+
+
+                    </div>
+                    </div>
+            </div>
 
     </div>
        
-
 </div>
 </template>
 
 <script> 
 import headersito from '@/components/header.vue'
+
+
     export default{
         name:"home",
 
@@ -88,7 +103,7 @@ import headersito from '@/components/header.vue'
         data(){
             return{   
                 ruta:"/stock",  
-                sto:[{titulo:"stock", fecha:"20/05/22"}, {titulo:"stock", fecha:"24/08/22"}]  ,        
+                sto:[{titulo:"stock", fecha:"20/05/22"}, {titulo:"stock", fecha:"24/08/22"}]  ,    
                 informacion:`Contactenos ante cualquier inconveniente`,
                 informationSection:false,
             }
@@ -97,7 +112,9 @@ import headersito from '@/components/header.vue'
 
                 mostrar(){
                     this.informationSection = !this.informationSection
-                }
+                },
+
+     
 
         }
 
