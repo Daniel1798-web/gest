@@ -45,11 +45,11 @@
             <div class="padre2">
                 <div class="hijo2">
                     <div class="SecInfo" v-show="informationSection">
-                        <div class="textIn">
                             <div class="contenido1"> 
+                                <div class="textIn">
                                 <p class="contenido3">{{informacion}}</p>
+                                </div>
                             </div>
-                        </div>
 
 
                         <div class="inforCompany">
