@@ -62,7 +62,8 @@
   margin: 0px;
   margin-right: 150px;
   width: 100px ;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(152, 223, 207);
+  border: .1px solid rgb(0, 0, 0);
 }
 
 .paImage{
@@ -72,7 +73,6 @@
   height: 50px;
   width: 50px;
   padding: 10px;
-  background-color: rgb(255, 255, 255);
 }
 
 .pi:hover .horizontal{
@@ -89,7 +89,7 @@
   margin-top: 0px;
   margin-right: 0px;
   padding: 0px;
-  width: 100px;
+  max-width: 100px;
   display: none;
   justify-content: center;
   flex-direction: column;
