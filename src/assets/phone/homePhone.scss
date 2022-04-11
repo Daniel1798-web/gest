@@ -249,7 +249,7 @@ position: fixed;
   position: fixed;
   background-color: rgb(201, 201, 201);
   width: 100%;
-  height: 200px;
+  height: 150px;
   margin-top: 500px;
   bottom: 0;
 }
@@ -263,8 +263,17 @@ position: fixed;
   height: 100%;
 }
 
+.footerData2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
 .footerData p{
   font-size: 20px;
+  width: 100%;
+  height: 100%;
 }
 
 .empresasAmigas{
@@ -272,9 +281,18 @@ position: fixed;
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
+  border: none;
+  padding: 0;
+  padding: 5px;
 }
 
+.onlyPhone{
+  display: flex;
+}
 
+.onlyPc{
+  display: none;
+}
 
 
 

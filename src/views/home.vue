@@ -1,9 +1,10 @@
 <template>
 
 
-<headersito class="heder"/>
+
 
 <div class="padre">
+    <headersito class="heder"/>
         <headersito class="hederPhone"/>
 
     <div class="pi">
@@ -70,17 +71,32 @@
             </div>
             <div class="footer">
                     <div class="footerData">
+                        <div class="footerData2">
                         <p>Empresa: MaxLevel</p>
                         <p>email: maxlevel@gmail.com</p>
-                        <p>Empresas Amigas</p>
+                        <p class="onlyPhone">Empresas Amigas</p>
+
+                    </div>
+
+                     
+
+                    <div class="onlyPc"> 
+                    <p class="onlyPc">Empresas Amigas</p>
+
+                    </div>
+
                     <div class="empresasAmigas"> 
+
+                   
+
                         <a target="_blank" href="https://www.microsoft.com/es-ar"><img src="@/assets/icons/microsoft.png"></a>
                         <a target="_blank" href="https://www.ea.com/es-mx/ea-play"><img src="@/assets/icons/deporte.png"></a>
                         <a target="_blank" href="https://www.coca-cola.com.ar/"><img src="@/assets/icons/cola.png"></a>
 
+                    </div>
 
                     </div>
-                    </div>
+                    
             </div>
 
     </div>
