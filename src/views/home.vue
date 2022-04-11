@@ -21,6 +21,7 @@
         </div>-->
 
             <nav class="pa">
+                <img class="paImage" src="@/assets/icons/casa.png">
                 <ul class="horizontal">
                     <li ><a :href="ruta" >CREAR STOCK</a></li>
                     <li>
@@ -36,6 +37,9 @@
                     </li>
                 </ul>
             </nav>
+
+
+            
 
 
             <div class="padre2">
