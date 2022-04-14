@@ -52,7 +52,7 @@
                 computed:{
                     entrar(){
                       
-                        return this.r = true
+                         this.r = true
                     }
                 },
                 watch:{

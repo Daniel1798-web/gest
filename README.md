@@ -22,3 +22,4 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+  grid-template-columns: 100px repeat(2, 100px) 200px;

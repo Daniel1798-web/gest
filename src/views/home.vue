@@ -47,14 +47,10 @@
                             <img src="@/assets/icons/cola.png">
                         </div> 
                     </div>
-
-                        <div class="stokGuardado" v-show="mostrarStock">
-                            <div >
-                                <ul  >
-                                    <li v-for="st in sto" :key="st"><a href="#">{{st.titulo}} {{st.fecha}}</a></li>
-                                
-                                </ul>   
-                            </div>
+                        <!--stock`s guardados-->
+                        <div class="stockGuardado" v-show="mostrarStock">    
+                            <li class="stockCajitas" v-for="st in sto" :key="st">
+                            <a href="#" class="stockA">{{st.titulo}} {{st.fecha}} descargar</a></li>         
                         </div>
 
                     <div class="SecInfo" v-show="informationSection">
@@ -134,7 +130,7 @@ import headersito from '@/components/header.vue'
             return{   
                 mostrarStock:false,
                 ruta:"/stock",  
-                sto:[{titulo:"stock", fecha:"20/05/22"}, {titulo:"stock", fecha:"24/08/22"}]  ,    
+                sto:[{titulo:"stock", fecha:"20/05/22"},{titulo:"stock", fecha:"20/05/22"}, {titulo:"stock", fecha:"24/08/22"},{titulo:"stock", fecha:"20/05/22"},{titulo:"stock", fecha:"20/05/22"},{titulo:"stock", fecha:"20/05/22"},{titulo:"stock", fecha:"20/05/22"},  {titulo:"stock", fecha:"20/05/22"},{titulo:"stock", fecha:"20/05/22"}],    
                 informacion:`Contactenos ante cualquier inconveniente`,
                 informationSection:false,
             }
