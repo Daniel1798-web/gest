@@ -96,7 +96,6 @@
   margin-top: 0px;
   margin-right: 0px;
   padding: 0px;
-  max-width: 100px;
   height: auto;
   display: none;
   justify-content: center;
@@ -129,16 +128,7 @@ width: 100%;
 
 }
 
-.horizontal > li:hover .menuVertical{
-display: flex;
-flex-direction: column;
-background-color: rgb(152, 223, 207);
-color: blackrgb(255, 255, 255);
-width: 100%;
-margin-left: 148px;
 
-
-}
 
 .menuVertical li:hover{
 background-color: rgb(138, 255, 226);
@@ -159,13 +149,18 @@ color: black;
 padding: 15px 15px 15px 20px;
 }
 
+.da{
+  display: none;
+}
+
 .padre2{
 display: flex;
 position: relative;
 bottom: 0;
+margin:auto;
 justify-content: center;
 width: 100%;
-margin-top: 100;
+margin-top: 15px;
 height: 300px;
 padding: 10px 10px;
 }
@@ -173,7 +168,8 @@ padding: 10px 10px;
 .hijo2{
 width: 300px;
 height: 250px;
-margin-top: 50px;
+margin-bottom: 50px;
+background-color: none;
 background-color:transparent;
 position: fixed;
 
@@ -245,6 +241,7 @@ position: fixed;
   font-size: 20px;
 }
 
+
 .footer{
   position: fixed;
   background-color: rgb(201, 201, 201);
@@ -295,7 +292,9 @@ position: fixed;
 }
 
 
-
+.stockGuardado{
+  background-color: black;
+}
 
 
 

@@ -4,7 +4,7 @@
 
 
 <div class="padre">
-    <headersito class="heder"/>
+   
         <headersito class="hederPhone"/>
 
     <div class="pi">
@@ -25,12 +25,10 @@
                 <img class="paImage" src="@/assets/icons/casa.png">
                 <ul class="horizontal">
                     <li ><a :href="ruta" >CREAR STOCK</a></li>
-                    <li>
+                
+                <li  v-on:click="mostrar2">
                     <a href="#" >STOCKS GUARDADOS</a>
-                        <ul class="menuVertical" >
-                            <li v-for="st in sto" :key="st"><a href="#">{{st.titulo}} {{st.fecha}}</a></li>
-                        </ul>   
-                    </li>
+                </li>
                     <li class="SecInformacion" v-on:click="mostrar">
                     <a href="#"  >INFORMACIÓN</a>
                         <ul class="menuVertical">
@@ -41,17 +39,30 @@
 
 
 
-
-
             <div class="padre2">
                 <div class="hijo2">
+                          <div class="logo"  v-show="!informationSection && !mostrarStock" > 
+                        <div> 
+                            <h1>Bienvenidos!</h1>
+                            <img src="@/assets/icons/cola.png">
+                        </div> 
+                    </div>
+
+                        <div class="stokGuardado" v-show="mostrarStock">
+                            <div >
+                                <ul  >
+                                    <li v-for="st in sto" :key="st"><a href="#">{{st.titulo}} {{st.fecha}}</a></li>
+                                
+                                </ul>   
+                            </div>
+                        </div>
+
                     <div class="SecInfo" v-show="informationSection">
                             <div class="contenido1"> 
                                 <div class="textIn">
                                 <p class="contenido3">{{informacion}}</p>
                                 </div>
                             </div>
-
 
                         <div class="inforCompany">
                             <div class="inforNumber">
@@ -68,12 +79,8 @@
                         </div>
                     </div>
 
-                    <div class="logo" v-show="welcome"> 
-                        <div> 
-                            <h1>Bienvenidos!</h1>
-                            <img src="@/assets/icons/cola.png">
-                        </div> 
-                    </div>
+
+              
                 </div>
             </div>
             <div class="footer">
@@ -125,7 +132,7 @@ import headersito from '@/components/header.vue'
 
         data(){
             return{   
-                welcome:true,
+                mostrarStock:false,
                 ruta:"/stock",  
                 sto:[{titulo:"stock", fecha:"20/05/22"}, {titulo:"stock", fecha:"24/08/22"}]  ,    
                 informacion:`Contactenos ante cualquier inconveniente`,
@@ -136,11 +143,23 @@ import headersito from '@/components/header.vue'
 
                 mostrar(){
                     this.informationSection = !this.informationSection
-                    this.welcome = !this.welcome
+                    this.mostrarStock = false
                 },
 
-     
+                mostrar2(){
+                this.informationSection = false
+                 this.mostrarStock  = !this.mostrarStock
+                
 
+                },
+                hola(){
+                    alert("hola")
+                }
+
+        },
+        
+        watch:{
+           
         }
 
         
