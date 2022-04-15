@@ -246,7 +246,7 @@
       justify-content: center;
       list-style: none;
       margin-top: 25px;
-     margin: 20px;
+     margin: 0px;
       width: 100%;
       height: 100%;
       background-color: beige;
@@ -278,6 +278,14 @@
       width: 100px;
       margin-top: 200px;
       
+    }
+
+    .stockDivBotones{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+
     }
 
 

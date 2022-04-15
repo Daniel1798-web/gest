@@ -292,12 +292,62 @@ position: fixed;
 }
 
 
-.stockGuardado{
-  background-color: black;
+
+
+
+
+.stockGuardado {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  grid-gap: 5px;
+  grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] ;
+  grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
+  grid-auto-flow: row;
+  justify-content: center;
+  list-style: none;
+  margin-top: 25px;
+ margin: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: beige;
+  border: 2px solid black;      
+}
+
+.stock1{
+  display: grid;
+
+}
+
+.stock2{
+  list-style: none;
+}
+
+.stockCajitas {
+  width: 90%;
+  height: 90%;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+  background-color: whitesmoke;
+  border: 2px solid black;
+}
+
+.stockA{
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  margin-top: 200px;
+  
 }
 
 
+.stockDivBotones{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 
+}
 
 
 

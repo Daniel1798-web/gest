@@ -48,9 +48,16 @@
                         </div> 
                     </div>
                         <!--stock`s guardados-->
-                        <div class="stockGuardado" v-show="mostrarStock">    
+                        <div v-show="mostrarStock">
+                        <div class="stockGuardado" >    
                             <li class="stockCajitas" v-for="st in sto" :key="st">
-                            <a href="#" class="stockA">{{st.titulo}} {{st.fecha}} descargar</a></li>         
+                            <a href="#" class="stockA">{{st.titulo}} {{st.fecha}} descargar</a></li>  
+                                
+                        </div>
+                            <div class="stockDivBotones">   
+                            <img v-show="anterioR" src="@/assets/icons/anterior.png">  
+                            <img v-on:click="botonStockGuardado" src="@/assets/icons/proximo.png">
+                            </div>
                         </div>
 
                     <div class="SecInfo" v-show="informationSection">
@@ -128,6 +135,7 @@ import headersito from '@/components/header.vue'
 
         data(){
             return{   
+                anterioR:false,
                 mostrarStock:false,
                 ruta:"/stock",  
                 sto:[{titulo:"stock", fecha:"20/05/22"},{titulo:"stock", fecha:"20/05/22"}, {titulo:"stock", fecha:"24/08/22"},{titulo:"stock", fecha:"20/05/22"},{titulo:"stock", fecha:"20/05/22"},{titulo:"stock", fecha:"20/05/22"},{titulo:"stock", fecha:"20/05/22"},  {titulo:"stock", fecha:"20/05/22"},{titulo:"stock", fecha:"20/05/22"}],    
@@ -148,9 +156,10 @@ import headersito from '@/components/header.vue'
                 
 
                 },
-                hola(){
-                    alert("hola")
+                botonStockGuardado(){
+                    this.anterioR = !this.anterioR
                 }
+               
 
         },
         
