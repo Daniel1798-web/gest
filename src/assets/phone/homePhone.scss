@@ -52,6 +52,10 @@
   justify-content: center;
   background-color: transparent;
   margin-top: 25px;
+  background-image: "@/assets/icons/logoempresa2.png";
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 400px;
     
 }
 
@@ -175,6 +179,15 @@ position: fixed;
 
 }
 
+
+.logo img{
+  margin-top: 100px;
+  width: 400px;
+  padding: 0%;
+  margin-left: 0px;
+  margin-right: 20px;
+}
+
 .SecInfo{
   width: 100%;
   height: 100%;
@@ -189,6 +202,7 @@ position: fixed;
 .contenido1{
   color: rgb(0, 0, 0);
   height: 25px;
+  padding: 10px;
   display: flex;
   justify-content: center;
 }
@@ -204,7 +218,6 @@ position: fixed;
   display: flex;
   justify-content: flex-start;
   margin-top: 0px;
-  margin-bottom: 200px;
 }
 
 .inforCompany{
@@ -247,7 +260,6 @@ position: fixed;
   background-color: rgb(201, 201, 201);
   width: 100%;
   height: 150px;
-  margin-top: 500px;
   bottom: 0;
 }
 
@@ -306,11 +318,13 @@ position: fixed;
   justify-content: center;
   list-style: none;
   margin-top: 25px;
- margin: 0px;
+  margin: 0px;
   width: 100%;
   height: 100%;
-  background-color: beige;
-  border: 2px solid black;      
+  padding: 20px;
+  background-color: transparent;
+  border: none;
+
 }
 
 .stock1{

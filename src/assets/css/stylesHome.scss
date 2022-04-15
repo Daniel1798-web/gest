@@ -34,6 +34,10 @@
     .pi{
         flex-direction: row;
         justify-content: center;
+        background-image: url("@/assets/icons/logoempresa2.png");
+        background-repeat: no-repeat;
+        background-position: center;
+
     }
 
     .pa{
@@ -54,7 +58,10 @@
       flex-direction: row;
       justify-content: space-around;
       background-color: rgb(152, 223, 207);
+      box-shadow: 2px 2px 20px 2px rgb(94, 94, 94);
+
       list-style: none;
+
     }
 
 
@@ -107,12 +114,26 @@
       margin-top: 10px;
     }
 
+    .logo{
+      margin-top: 100px;
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .logocontent{
+      display: flex;
+    }
+
+    .logoimg{
+      display: flex;
+    }
+
     
 
     .SecInfo{
       width: 100%;
       height: 100%;
-      background-color: rgb(255, 255, 255);
       margin:auto;
     }
 
@@ -126,7 +147,6 @@
       height: 200px;
       display: flex;
       justify-content: center;
-      background-color: rgb(255, 255, 255);
     }
 
     .contenido3{
@@ -253,9 +273,8 @@
      margin: 0px;
       width: 100%;
       height: 100%;
-      background-color: rgb(152, 223, 207);
-
-      border: 2px solid black;      
+      background-color: transparent;
+  border: none;  
     }
 
     .stock1{
@@ -273,13 +292,13 @@
       padding: 20px;
       margin: auto;
       text-align: center;
-      background-color: whitesmoke;
+      background-color: rgb(221, 255, 27);
       border: 2px solid black;
     }
 
     .stockA{
       text-align: center;
-      font-size: 20px;
+      font-size: 15px;
       height: 100px;
       width: 100px;
       

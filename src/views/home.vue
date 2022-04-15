@@ -26,11 +26,11 @@
                 <ul class="horizontal">
                     <li ><a :href="ruta" >CREAR STOCK</a></li>
                 
-                <li  v-on:click="mostrar2">
-                    <a href="#" >STOCKS GUARDADOS</a>
+                <li>
+                    <a href="#"   v-on:click="mostrar2">STOCKS GUARDADOS</a>
                 </li>
-                    <li class="SecInformacion" v-on:click="mostrar">
-                    <a href="#"  >INFORMACIÓN</a>
+                    <li class="SecInformacion" >
+                    <a href="#" v-on:click="mostrar" >INFORMACIÓN</a>
                         <ul class="menuVertical">
                         </ul>   
                     </li>
@@ -41,12 +41,13 @@
 
             <div class="padre2">
                 <div class="hijo2">
+
                           <div class="logo"  v-show="!informationSection && !mostrarStock" > 
-                        <div> 
-                            <h1>Bienvenidos!</h1>
-                            <img src="@/assets/icons/cola.png">
+                        <div class="logoconten"> 
+                            <img class="logoImg" >
                         </div> 
                     </div>
+
                         <!--stock`s guardados-->
                         <div v-show="mostrarStock" class="stockPadre">
                         <div class="stockGuardado" >    
@@ -55,7 +56,7 @@
                                    
                         </div>
                             <div class="stockDivBotones">   
-                            <img class="imgBoton" v-show="anterioR" src="@/assets/icons/anterior.png">  
+                            <img class="imgBoton"  v-on:click="botonStockGuardado" v-show="anterioR" src="@/assets/icons/anterior.png">  
                             <img class="imgBoton" v-on:click="botonStockGuardado" src="@/assets/icons/proximo.png">
                             </div>
                         </div>
@@ -87,37 +88,23 @@
                 </div>
             </div>
             <div class="footer">
-                    <div class="footerData">
-                        <div class="footerData2">
+                   <div class="footerData">
+                       <!--  <div class="footerData2">
                         <p>Empresa: MaxLevel</p>
                         <p>email: maxlevel@gmail.com</p>
                         <p class="onlyPhone">Empresas Amigas</p>
 
-                    </div>
+                    </div>-->   
 
-                     
-
-                    <div class="onlyPc"> 
-                    <p class="onlyPc">Empresas Amigas</p>
-
-                    </div>
-
-                    <div class="empresasAmigas"> 
-
-                   
-
-                        <a target="_blank" href="https://www.microsoft.com/es-ar"><img src="@/assets/icons/microsoft.png"></a>
-                        <a target="_blank" href="https://www.ea.com/es-mx/ea-play"><img src="@/assets/icons/deporte.png"></a>
-                        <a target="_blank" href="https://www.coca-cola.com.ar/"><img src="@/assets/icons/cola.png"></a>
-
-                    </div>
-
-                    </div>
-                    
-            </div>
+        <div class="empresasAmigas">
+        <img src="@/assets/icons/microsoft.png" >
+        <img src="@/assets/icons/deporte.png">
+        <img src="@/assets/icons/cola.png">
+        </div>
+    </div>        
+ </div>
 
     </div>
-       
 </div>
 </template>
 

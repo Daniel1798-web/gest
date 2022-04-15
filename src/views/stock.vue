@@ -58,7 +58,7 @@
 <div class="tableroListaDos">
   <ul v-if="mostrar2" class="ulproduct" >
     <li  class="product" v-for="(f, index) in lista2" v-bind:key="index">
-    <p class="productText">{{f.titulo}} {{f.fecha}}<input type="number"><input type="checkbox" class="check"  v-model="f.eliminar"></p>
+    <p class="productText">{{f.titulo}} {{f.fecha}}<input type="checkbox" class="check"  v-model="f.eliminar"></p>
     
     </li>
 
