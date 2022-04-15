@@ -109,9 +109,7 @@
     }
 
     .hijo2{
-      width: 50%;
       height: 50%;
-      margin-top: 10px;
     }
 
     .logo{
@@ -144,7 +142,6 @@
 
     .contenido1{
       color: rgb(0, 0, 0);
-      height: 200px;
       display: flex;
       justify-content: center;
     }
@@ -159,21 +156,21 @@
     .infor{
       display: flex;
       justify-content: flex-start;
-     
+     display: none;
       
     }
 
     .inforCompany{
       width: 100%;
       display: flex;
-      justify-content: flex-start;
     }
 
     .inforNumber{
       margin-top: 0px;
       width: 100%;
       display: flex;
-      justify-content: flex-start;
+      justify-content: space-between;
+      flex-direction: row;
     }
 
     .inforImg{

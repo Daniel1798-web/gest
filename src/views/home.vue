@@ -70,15 +70,15 @@
 
                         <div class="inforCompany">
                             <div class="inforNumber">
-                        <img class="inforImg" src="@/assets/icons/microsoft.png">
-                        <h2 class="in1">OSITO ACADEMY</h2>
+                        <a target="_blank" href="https://wa.me/543516838934"><img class="inforImg" src="@/assets/icons/telefono.png"></a>
+
+                        <a target="_blank" href="mailto:danrieloto@gmail.com"><img class="inforImg" src="@/assets/icons/correo.png"></a>
                             </div>
                          </div>
 
                         <div class="infor">
                                 <div class="inforNumber">
-                            <img class="inforImg" src="@/assets/icons/telefono.png">
-                            <h2 class="in">352-000-0000</h2>
+                            <a target="_blank" href="https://wa.me/543516838934"><img class="inforImg" src="@/assets/icons/telefono.png"></a>
                             </div>
                         </div>
                     </div>
