@@ -51,8 +51,8 @@
                         <div v-show="mostrarStock" class="stockPadre">
                         <div class="stockGuardado" >    
                             <li class="stockCajitas" v-for="st in sto" :key="st">
-                            <a href="#" class="stockA">{{st.titulo}} {{st.fecha}} descargar</a></li>  
-                                
+                            <a href="#" class="stockA">{{st.titulo}} {{st.fecha}} <a>Descargar</a> </a></li>  
+                                   
                         </div>
                             <div class="stockDivBotones">   
                             <img class="imgBoton" v-show="anterioR" src="@/assets/icons/anterior.png">  
