@@ -235,6 +235,9 @@
       border: none;
     }
     
+    .stockPadre{
+      margin-top: 100px;
+    }
 
     .stockGuardado {
       display: grid;
@@ -286,6 +289,11 @@
       justify-content: space-between;
       width: 100%;
 
+    }
+
+    .imgBoton::placeholder{
+      box-shadow: 10px 10px rgb(19, 255, 216);
+      background-color: blue;
     }
 
 

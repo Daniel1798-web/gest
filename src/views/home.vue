@@ -48,15 +48,15 @@
                         </div> 
                     </div>
                         <!--stock`s guardados-->
-                        <div v-show="mostrarStock">
+                        <div v-show="mostrarStock" class="stockPadre">
                         <div class="stockGuardado" >    
                             <li class="stockCajitas" v-for="st in sto" :key="st">
                             <a href="#" class="stockA">{{st.titulo}} {{st.fecha}} descargar</a></li>  
                                 
                         </div>
                             <div class="stockDivBotones">   
-                            <img v-show="anterioR" src="@/assets/icons/anterior.png">  
-                            <img v-on:click="botonStockGuardado" src="@/assets/icons/proximo.png">
+                            <img class="imgBoton" v-show="anterioR" src="@/assets/icons/anterior.png">  
+                            <img class="imgBoton" v-on:click="botonStockGuardado" src="@/assets/icons/proximo.png">
                             </div>
                         </div>
 
