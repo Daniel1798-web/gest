@@ -7,8 +7,8 @@
   <a href="/home" class="linkRegreso"><button class="regreso"><img class="casita" src="@/assets/icons/casa.png"></button></a>
    </nav>
 
-    <input type="text" class="texto"  placeholder="Añadir Producto" v-model="value"/>
-    <input type="text"  class="texto2" placeholder="Añadir fecha" v-model="value2"/>
+    <input type="text" class="texto"  placeholder="Añadir Producto" maxlength="20" v-model="value"/>
+    <input type="date"  class="texto2" placeholder="Añadir fecha"   v-model="value2"/>
    
 
    
@@ -22,7 +22,7 @@
       <div class="textoPhoned">
         <input maxlength="18" type="text" class="textoPhone"  placeholder="Añadir Producto" v-model="value"/>
         <br />
-        <input maxlength="8" type="text"  class="textoPhone2" placeholder="Añadir fecha" v-model="value2"/>
+        <input type="text"  class="textoPhone2" placeholder="Añadir fecha" v-model="value2"/>
       </div>
 
     <div class="botonesPhone">
@@ -42,18 +42,17 @@
   
 
  <div class="dad">
-    
+
 <div class="tableroListaUno">
     <ul v-if="mostrar" class="ulproduct">
 <li class="product"  v-for="(l, index) in lista" v-bind:key="index">
-  <p class="productText">{{l.titulo}}/{{l.fecha}}<input type="checkbox" class="check" v-model="l.eliminar"></p>
+  <p class="productText">{{l.titulo}}{{l.fecha}}<input type="checkbox" class="check" v-model="l.eliminar"></p>
 </li>
 
 </ul>
 <div v-else class="vacio">No hay Datos</div>
 </div>
-
-
+<button v-on:click="prueba">cosa</button>
 
 <div class="tableroListaDos">
   <ul v-if="mostrar2" class="ulproduct" >
@@ -78,6 +77,7 @@
 </template>
 
 <script>
+
 export default{
      name: 'stock',
  
@@ -92,19 +92,26 @@ export default{
         value2:'',
         lista:[],
         lista2:[],
+        co:"hola",
        
   }
   
-  },
+  },|
       methods:{
 
         prueba:function(){
-            alert("funciona")
+            alert(this.co)
         },
 
 
       añadir:function(){
-        this.lista.push({ titulo:this.value, fecha:this.value2,  id:(new Date()).getTime(), eliminar:false}),
+        var date = new Date()
+        var options = { year: 'numeric', month: 'numeric', day: 'numeric' };
+        var fec = new Date(this.value2);
+
+
+        const months = ["JAN", "FEB", "MAR","APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+        this.lista.push({ titulo:this.value, fecha:fec.toLocaleDateString("es-ES", options),  id: date.getDate() + "-" + months[date.getMonth()] + "-" + date.getFullYear(), eliminar:false}),
         console.log(this.lista)
         this.mostrar=true
         this.value = ""
@@ -112,8 +119,14 @@ export default{
         this.contador++
       },
 
-      añadir2:function(){
-        this.lista2.push({titulo:this.value, fecha:this.value2, id:(new Date()).getTime(), eliminar:false }),
+       añadir2(){
+
+        let fechita = this.value2
+      
+       
+       
+    
+        this.lista2.push({titulo:this.value, fecha:this.value2, id:(new Date(this.value2)), eliminar:false }),
         console.log(this.lista2)
         this.mostrar2=true
         this.contador++
@@ -121,6 +134,8 @@ export default{
         this.value2 = ""
         console.log(this.contador)
       },
+
+      
 
       eliminar:function() 
       {
